@@ -220,3 +220,24 @@ td {
 
 
 }
+
+@media only screen and (max-width: 1074px) {
+
+table, tr, td {
+ 
+  max-width: 88px;
+  border: 2px solid aqua;
+  border-collapse: inherit;
+  padding: 20px 1px;
+  /*text-align: center;*/
+  height: 15px;
+  width: 100px;
+  overflow-x: hidden;
+}
+
+td {
+  word-wrap: break-word;
+}
+
+}
+
