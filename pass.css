@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: darkblue;
+  background-color: aliceblue;
 }
 
 nav {
@@ -33,6 +33,10 @@ ul li {
 
 ul > li:hover {
   color: yellow;
+}
+
+label {
+  color: royalblue;
 }
 
 table,
