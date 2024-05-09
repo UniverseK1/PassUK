@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="pass.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAss</title>
+</head>
+
+<body>
+    <nav>
+        <div class="name">PassUK</div>
+        <!-- <span>Pass</span><Span class="GGT">Uk|</Span> -->
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Password Manager</h1>
+        <h2>Your Password</h2>
+        <table>
+            <tr>
+                <th>Website</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Delete</th>
+            </tr>
+
+        </table>
+
+        <h2>Add Password</h2>
+        <p class="alert">Your password has been copied</p>
+
+        <form action="/submit" method="post">
+            <!-- Text input for Website -->
+            <pre>
+                 <label for="website">website:</label>
+                <input type="text" id="website" name="website" required>
+            </pre>
+
+            <!-- Text input for username -->
+            <pre>
+                 <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                </pre>
+
+            <!-- Password input -->
+            <pre>
+                 <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </pre>
+
+
+
+            <!-- Submit button -->
+            <pre>
+                <button class="btn" type="submit">Submit</button>
+            </pre>
+        </form>
+
+    </div>
+    <script src="pass.js"></script>
+</body>
+
+</html>

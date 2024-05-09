@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Jacquard+24&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: darkblue;
+}
+
+nav {
+  background-color: rgb(25, 0, 247);
+  color: rgb(255, 255, 255);
+  padding: 12px 3px;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  margin: 0 23px; /* agr maine ye nav ka justify-content space between kiya toh main ye margin apply karunga yaha pe bhi or .name wale me bhi */
+}
+
+ul li {
+  list-style: none;
+  margin: 15px;
+  /* font-size: px; */
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+ul > li:hover {
+  color: yellow;
+}
+
+table,
+td,
+tr {
+  border: 2px solid aqua;
+  border-collapse: collapse;
+  padding: 5px 13px;
+  text-align: center;
+}
+th, td {
+    color: royalblue;
+}
+/* td,
+th {
+    padding: 15px 15px 15px 15px;
+    text-align: center;
+} */
+
+.name {
+  /*  margin: 15px;
+    font-size: medium; */
+  font-weight: 900;
+  font-size: 21px;
+  margin: 11px 23px;
+  cursor: pointer;
+}
+
+.GGT {
+  color: rgb(255, 51, 0);
+}
+
+.container {
+  max-width: 80vw;
+  margin: 23px auto;
+}
+
+h1,
+h2,
+h3 {
+  margin: 23px 0;
+  color: royalblue;
+}
+
+.btn {
+  padding: 8px 17px;
+  background: black;
+  /* color: white; */
+  color: royalblue;
+  font-weight: 900;
+  border: 2px solid aqua;
+  border-radius: 15px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.btnsm {
+  padding: 8px 17px;
+  background: black;
+  color: white;
+  font-weight: 900;
+  border: 2px solid aqua;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+img {
+  cursor: pointer;
+  position: relative;
+  bottom: 8px;
+  width: 16px;
+  height: 16px;
+}
+
+.alert {
+    display: none;
+}
+
+#password {
+    border: 2px solid aqua;
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    border-radius: 15px;
+    padding: 6px 0px;
+}
+
+#username {
+    border: 2px solid aqua;
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    border-radius: 15px;
+    padding: 6px 0px;
+}
+
+#website {
+    border: 2px solid aqua;
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    border-radius: 15px;
+    padding: 6px 0px;
+}
