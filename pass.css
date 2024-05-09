@@ -170,12 +170,12 @@ img {
     /*text-align: center;*/
     height: 15px;
     text-align: left;
-    max-width: 99px;
+    max-width: 95px;
   }
 
 
   .container {
-    max-width: 95vw;
+    max-width: 92vw;
     margin: 23px auto;
     display: block;
   }
