@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: darkblue;
+  background-color: darkblue;
 }
 
 nav {
@@ -43,8 +43,9 @@ tr {
   padding: 5px 13px;
   text-align: center;
 }
-th, td {
-    color: royalblue;
+th,
+td {
+  color: royalblue;
 }
 /* td,
 th {
@@ -108,32 +109,105 @@ img {
 }
 
 .alert {
-    display: none;
+  display: none;
 }
 
 #password {
-    border: 2px solid aqua;
-    background-color: black;
-    color: white;
-    font-weight: 900;
-    border-radius: 15px;
-    padding: 6px 0px;
+  border: 2px solid aqua;
+  background-color: black;
+  color: white;
+  font-weight: 900;
+  border-radius: 15px;
+  padding: 6px 0px;
 }
 
 #username {
-    border: 2px solid aqua;
-    background-color: black;
-    color: white;
-    font-weight: 900;
-    border-radius: 15px;
-    padding: 6px 0px;
+  border: 2px solid aqua;
+  background-color: black;
+  color: white;
+  font-weight: 900;
+  border-radius: 15px;
+  padding: 6px 0px;
 }
 
 #website {
+  border: 2px solid aqua;
+  background-color: black;
+  color: white;
+  font-weight: 900;
+  border-radius: 15px;
+  padding: 6px 0px;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 25px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 450px) {
+  nav {
+    flex-direction: column;
+    height: 200px;
+  }
+
+  ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  table,td,
+  tr {
     border: 2px solid aqua;
-    background-color: black;
+    border-collapse: inherit;
+    padding: 20px 1px;
+    /*text-align: center;*/
+    height: 15px;
+    text-align: left;
+  }
+
+
+  .container {
+    max-width: 95vw;
+    margin: 23px auto;
+    display: block;
+  }
+
+  .btnsm {
+    padding: 10px 5px;
+    background: black;
     color: white;
+    font-size: 13px;
     font-weight: 900;
+    border: 2px solid aqua;
     border-radius: 15px;
-    padding: 6px 0px;
+    cursor: pointer;
+  }
+
+  .menu {
+    margin-top: 0.25rem;
+    display: block;
+  }
+
+  .h-nav-resp {
+    height: 45px;
+}
+
+
+.v-class-resp {
+  opacity: 0;
+}
+
+.name {
+  /*  margin: 15px;
+    font-size: medium; */
+  font-weight: 900;
+  font-size: 18px;
+  margin: 10px 23px;
+  cursor: pointer;
+}
+
+
 }

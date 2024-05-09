@@ -98,3 +98,12 @@ document.querySelector(".btn").addEventListener("click", (e) => {
   }
   showPasswords();
 });
+
+
+menu = document.querySelector('.menu')
+nav = document.querySelector('.h-nav-resp')
+ul = document.querySelector('ul')
+menu.addEventListener('click', ()=> {
+    ul.classList.toggle('v-class-resp');
+    nav.classList.toggle('h-nav-resp');
+})
