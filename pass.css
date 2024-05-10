@@ -174,11 +174,11 @@ img {
   }*/
 
 
-  /*.container {
-    max-width: 92vw;
+  .container {
+    max-width: 95vw;
     margin: 23px auto;
     display: block;
-  }*/
+  }
 
   /*.btnsm {
     padding: 10px 5px;
