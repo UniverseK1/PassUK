@@ -174,13 +174,13 @@ img {
   }*/
 
 
-  .container {
+  /*.container {
     max-width: 92vw;
     margin: 23px auto;
     display: block;
-  }
+  }*/
 
-  .btnsm {
+  /*.btnsm {
     padding: 10px 5px;
     background: black;
     color: white;
@@ -189,7 +189,7 @@ img {
     border: 2px solid aqua;
     border-radius: 15px;
     cursor: pointer;
-  }
+  }*/
 
   .menu {
     margin-top: 0.25rem;
