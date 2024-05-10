@@ -35,10 +35,6 @@ ul > li:hover {
   color: yellow;
 }
 
-label {
-  color: royalblue;
-}
-
 table,
 td,
 tr {
@@ -51,6 +47,7 @@ th,
 td {
   color: royalblue;
 }
+
 /* td,
 th {
     padding: 15px 15px 15px 15px;
@@ -112,6 +109,10 @@ img {
   height: 16px;
 }
 
+label {
+  color: royalblue;
+}
+
 .alert {
   display: none;
 }
@@ -143,6 +144,10 @@ img {
   padding: 6px 0px;
 }
 
+.tb {
+  overflow-x: auto;
+}
+
 .menu {
   display: none;
   position: absolute;
@@ -162,30 +167,18 @@ img {
     text-align: center;
   }
 
- /* table,td,
-  tr {
-    border: 2px solid aqua;
-    border-collapse: inherit;
-    padding: 20px 1px;
-    /*text-align: center;*/
-   /* height: 15px;
-    text-align: left;
-    max-width: 90px;
-  }*/
-
-
   .container {
     max-width: 95vw;
     margin: 23px auto;
     display: block;
-  }
+  } 
 
   /*.btnsm {
-    padding: 10px 5px;
+    padding: 8px 17px;
     background: black;
     color: white;
-    font-size: 13px;
-    font-weight: 900;
+    /*font-size: 13px;*/
+    /*font-weight: 900;
     border: 2px solid aqua;
     border-radius: 15px;
     cursor: pointer;
@@ -205,10 +198,6 @@ img {
   opacity: 0;
 }
 
-/*td {
-  word-wrap: break-word;
-}*/
-  
 .name {
   /*  margin: 15px;
     font-size: medium; */
@@ -217,33 +206,43 @@ img {
   margin: 10px 23px;
   cursor: pointer;
 }
-  
-  table, tr, td {
- 
- /* max-width: 88px;*/
-  border: 2px solid aqua;
-  border-collapse: collapse;
-  border-spacing: 50;
-  width: 100%;
-  /*padding: 20px 1px;*/
-  /*text-align: center;*/
- /* height: 15px;
-  width: 100px;*/
-  /*overflow-x: hidden;*/
-}
 
-td, th {
+td {
   word-wrap: break-word;
-  text-align: center;
-  padding: 8px;
 }
 
-.tb {
-  overflow-x: auto;
+#password {
+  border: 2px solid aqua;
+  background-color: black;
+  color: white;
+  font-weight: 900;
+  border-radius: 15px;
+  padding: 6px 0px;
+  width: 220px;
 }
 
+#username {
+  border: 2px solid aqua;
+  background-color: black;
+  color: white;
+  font-weight: 900;
+  border-radius: 15px;
+  padding: 6px 0px;
+  width: 220px;
+}
+
+#website {
+  border: 2px solid aqua;
+  background-color: black;
+  color: white;
+  font-weight: 900;
+  border-radius: 15px;
+  padding: 6px 0px;
+  width: 220px;
+}
 
 }
+
 
 @media only screen and (max-width: 1074px) {
 
@@ -269,7 +268,42 @@ td, th {
 
 .tb {
   overflow-x: auto;
+  background-color: black;
 }
 
 }
 
+
+
+@media only screen and (max-width: 335px) {
+  
+  #password {
+    border: 2px solid aqua;
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    border-radius: 15px;
+    padding: 6px 0px;
+    width: 220px;
+  }
+  
+  #username {
+    border: 2px solid aqua;
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    border-radius: 15px;
+    padding: 6px 0px;
+    width: 220px;
+  }
+  
+  #website {
+    border: 2px solid aqua;
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    border-radius: 15px;
+    padding: 6px 0px;
+    width: 220px;
+  }
+  }
