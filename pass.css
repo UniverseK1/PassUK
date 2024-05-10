@@ -162,16 +162,16 @@ img {
     text-align: center;
   }
 
-  table,td,
+ /* table,td,
   tr {
     border: 2px solid aqua;
     border-collapse: inherit;
     padding: 20px 1px;
     /*text-align: center;*/
-    height: 15px;
+   /* height: 15px;
     text-align: left;
     max-width: 90px;
-  }
+  }*/
 
 
   .container {
@@ -225,18 +225,26 @@ td {
 
 table, tr, td {
  
-  max-width: 88px;
+ /* max-width: 88px;*/
   border: 2px solid aqua;
-  border-collapse: inherit;
-  padding: 20px 1px;
+  border-collapse: collapse;
+  border-spacing: 50;
+  width: 100%;
+  /*padding: 20px 1px;*/
   /*text-align: center;*/
-  height: 15px;
-  width: 100px;
-  overflow-x: hidden;
+ /* height: 15px;
+  width: 100px;*/
+  /*overflow-x: hidden;*/
 }
 
-td {
+td, th {
   word-wrap: break-word;
+  text-align: center;
+  padding: 8px;
+}
+
+.tb {
+  overflow-x: auto;
 }
 
 }
