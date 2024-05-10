@@ -211,7 +211,7 @@ td {
   word-wrap: break-word;
 }
 
-#password {
+/*#password {
   border: 2px solid aqua;
   background-color: black;
   color: white;
@@ -239,7 +239,7 @@ td {
   border-radius: 15px;
   padding: 6px 0px;
   width: 220px;
-}
+}*/
 
 }
 
