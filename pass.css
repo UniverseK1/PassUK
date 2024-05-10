@@ -217,6 +217,30 @@ img {
   margin: 10px 23px;
   cursor: pointer;
 }
+  
+  table, tr, td {
+ 
+ /* max-width: 88px;*/
+  border: 2px solid aqua;
+  border-collapse: collapse;
+  border-spacing: 50;
+  width: 100%;
+  /*padding: 20px 1px;*/
+  /*text-align: center;*/
+ /* height: 15px;
+  width: 100px;*/
+  /*overflow-x: hidden;*/
+}
+
+td, th {
+  word-wrap: break-word;
+  text-align: center;
+  padding: 8px;
+}
+
+.tb {
+  overflow-x: auto;
+}
 
 
 }
