@@ -53,7 +53,7 @@ const showPasswords = () => {
       const element = arr[index];
 
       str += `<tr>
-<td>${element.website} <img onclick="copyText('${element.website}')" src="copy.svg" alt="copy button" width="15" height="15">
+<td>${element.website} <img onclick="copyText('${element.website}')" src="copy.svg" alt="copy button" width="15" height="15"> <a href="https://${element.website}"><img src="share.png" width="15" height="15"></a>
 </td>
 <td>${element.username} <img onclick="copyText('${element.username}')" src="copy.svg" alt="copy button" width="15" height="15">
 </td>
