@@ -1,37 +1,34 @@
-
 function maskPassword(pass) {
-  let str = ""
+  let str = "";
   for (let index = 0; index < pass.length; index++) {
-    str += "*" 
+    str += "*";
   }
-  return str
+  return str;
 }
 
 function copyText(txt) {
   navigator.clipboard.writeText(txt).then(
     () => {
-
-     // alert("Copied the text: " + txt);
-     document.querySelector(".alert").classList.remove("alert")
+      // alert("Copied the text: " + txt);
+      showToast("Text Copied Successfully", "success", 5000);
+      /* document.querySelector(".alert").classList.remove("alert"); */
     },
     () => {
-      alert("failed")
-    },
+      alert("failed");
+    }
   );
 }
 
-
-
-const deletePassword = (website)=>{
-    let data = localStorage.getItem("passwords");
-    let arr = JSON.parse(data);
-    arrUpdated = arr.filter((e)=>{
-        return e.website != website
-    })
-    localStorage.setItem("passwords", JSON.stringify(arrUpdated))
-    alert(`Successfully deleted $(website)'s password`)
-    showPasswords()
-}
+const deletePassword = (website) => {
+  let data = localStorage.getItem("passwords");
+  let arr = JSON.parse(data);
+  arrUpdated = arr.filter((e) => {
+    return e.website != website;
+  });
+  localStorage.setItem("passwords", JSON.stringify(arrUpdated));
+  alert(`Successfully deleted $(website)'s password`);
+  showPasswords();
+};
 
 // Logic to fill the table
 const showPasswords = () => {
@@ -45,7 +42,7 @@ const showPasswords = () => {
         <th>Username</th>
         <th>Password</th>
         <th>Delete</th>
-    </tr>`
+    </tr>`;
 
     let arr = JSON.parse(data);
     let str = "";
@@ -53,21 +50,30 @@ const showPasswords = () => {
       const element = arr[index];
 
       str += `<tr>
-<td>${element.website} <img onclick="copyText('${element.website}')" src="copy.svg" alt="copy button" width="15" height="15"> <a href="${element.website}"><img src="share.png" width="15" height="15"></a>
+<td> ${element.website} <img onclick="copyText('${
+        element.website
+      }')" src="copy.svg" alt="copy button" width="15" height="15" class="custom-toast success-toast"> <a href="https://${
+        element.website
+      }"><img src="share.png" width="15" height="15"></a>
 </td>
-<td>${element.username} <img onclick="copyText('${element.username}')" src="copy.svg" alt="copy button" width="15" height="15">
+<td>${element.username} <img onclick="copyText('${
+        element.username
+      }')" src="copy.svg" alt="copy button" width="15" height="15" class="custom-toast success-toas">
 </td>
-<td>${maskPassword(element.password)} <img onclick="copyText('${element.password}')" src="copy.svg" alt="copy button" width="15" height="15">
-</td>
-<td><button class="btnsm" onclick="deletePassword('${element.website}')">Delete</button></td>
-    </tr>`;
+<td>${maskPassword(element.password)} <img onclick="copyText('${
+        element.password
+      }')" src="copy.svg" alt="copy button" width="15" height="15" class="custom-toast success-toa"></td>
+<td><button class="btnsm" onclick="deletePassword('${
+        element.website
+      }')">Delete</button></td>
+</tr>`;
     }
 
     tb.innerHTML = tb.innerHTML + str;
   }
-  website.value = ""
-  username.value = ""
-  password.value = ""
+  website.value = "";
+  username.value = "";
+  password.value = "";
 };
 
 showPasswords();
@@ -99,11 +105,38 @@ document.querySelector(".btn").addEventListener("click", (e) => {
   showPasswords();
 });
 
+menu = document.querySelector(".menu");
+nav = document.querySelector(".h-nav-resp");
+ul = document.querySelector("ul");
+menu.addEventListener("click", () => {
+  ul.classList.toggle("v-class-resp");
+  nav.classList.toggle("h-nav-resp");
+});
 
-menu = document.querySelector('.menu')
-nav = document.querySelector('.h-nav-resp')
-ul = document.querySelector('ul')
-menu.addEventListener('click', ()=> {
-    ul.classList.toggle('v-class-resp');
-    nav.classList.toggle('h-nav-resp');
-})
+/* Toast Scricpt */
+let icon = {
+  success: '<span class="material-symbols-outlined">task_alt</span>',
+};
+
+const showToast = (
+  message = "Sample Message",
+  toastType = "info",
+  duration = 5000
+) => {
+  if (!Object.keys(icon).includes(toastType)) toastType = "info";
+
+  let box = document.createElement("div");
+  box.classList.add("toast", `toast-${toastType}`);
+  box.innerHTML = `
+                    </div> 
+                    <div class="toast-message">${message}</div> 
+                    <div class="toast-progress"></div>`;
+  document.body.appendChild(box);
+};
+
+let submit = document.querySelector(".custom-toast.success-toast");
+
+submit.addEventListener("click", (e) => {
+  e.preventDefault();
+  /* showToast("Article Submitted Successfully", "success", 5000); */
+});
